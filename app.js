@@ -3,6 +3,7 @@ var http = require("http");
 const port = process.env.PORT || 5000;
 setInterval(function() {
     http.get("http://stockoverflowku.herokuapp.com/");
+    http.get("https://awakedynos.herokuapp.com/");
 }, 300000); // every 5 minutes (300000)
 
 http.createServer(function (req, res) { 
